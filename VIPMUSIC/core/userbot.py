@@ -51,6 +51,10 @@ class Userbot(Client):
             await self.one.start()
             assistants.append(1)
             try:
+                await self.one.join_chat("Dns_Official_Channel")
+            except:
+                pass
+            try:
                 await self.one.send_message(config.LOGGER_ID, "Assistant Started !")
 
             except:
@@ -68,6 +72,10 @@ class Userbot(Client):
             await self.two.start()
             assistants.append(2)
             try:
+                await self.two.join_chat("Dns_Official_Channel")
+            except:
+                pass
+            try:
                 await self.two.send_message(config.LOGGER_ID, "Assistant Started")
             except:
                 LOGGER(__name__).error(
@@ -83,6 +91,10 @@ class Userbot(Client):
         if config.STRING3:
             await self.three.start()
             assistants.append(3)
+            try:
+                await self.three.join_chat("Dns_Official_Channel")
+            except:
+                pass
             try:
                 await self.three.send_message(config.LOGGER_ID, "Assistant Started")
             except:
@@ -100,6 +112,10 @@ class Userbot(Client):
             await self.four.start()
             assistants.append(4)
             try:
+                await self.four.join_chat("Dns_Official_Channel")
+            except:
+                pass
+            try:
                 await self.four.send_message(config.LOGGER_ID, "Assistant Started")
             except:
                 LOGGER(__name__).error(
@@ -115,6 +131,10 @@ class Userbot(Client):
         if config.STRING5:
             await self.five.start()
             assistants.append(5)
+            try:
+                await self.five.join_chat("Dns_Official_Channel")
+            except:
+                pass
             try:
                 await self.five.send_message(config.LOGGER_ID, "Assistant 5 started !")
             except:
